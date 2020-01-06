@@ -25,9 +25,9 @@ export class LoginService {
 
   isValidPassword(password: String)
   {
-    return this.http.get<Boolean>('http://localhost:8080/nextSphere/isValidPassword?password='+ password);
+    return this.http.get<Boolean>('http://localhost:8080/nextSphere/isValidPassword?password=' + password);
   }
-  
+
   executeMainPlan(mainPlanKey : string) : Observable<object>
   {
      let params = new HttpParams().set("mainPlanKey",mainPlanKey)

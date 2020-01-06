@@ -7,6 +7,7 @@ import { CompensationPlansComponent } from './compensation-plans/compensation-pl
 import { CommissionTypeComponent } from './commission-type/commission-type.component';
 import { BonusesComponent } from './bonuses/bonuses.component';
 import { DistributorStructureComponent } from './distributor-structure/distributor-structure.component';
+import { PremiumBonusSetComponent } from './premium-bonus-set/premium-bonus-set.component';
 
 const routes: Routes = [
   // { path: '', component: HelloWorldComponent },
@@ -15,7 +16,9 @@ const routes: Routes = [
   { path: 'compensationPlans', component: CompensationPlansComponent },
   { path: 'commissionType', component: CommissionTypeComponent },
   { path: 'bonus', component: BonusesComponent },
-  { path: 'distributor', component: DistributorStructureComponent }
+  { path: 'distributor', component: DistributorStructureComponent },
+  { path: 'premium-kit', component: PremiumBonusSetComponent }
+
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
