@@ -1,0 +1,259 @@
+<p class="title">Bonuses</p>
+<div *ngIf="length == 1">
+    <div *ngIf="commissionTypeArr[0] == 'Differential'" class="container-fluid">
+        <p class="sub-title">Type : Differential Commission</p>
+
+        <div class="row">
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="fastStartBonusCalculation()">
+                    <p class="bonus-title">Fast-Start Bonus / Quick start</p>
+                    <!-- <p class="commission-type">( Type : Differential commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;As a new representative, a member is
+                        eligible
+                        for
+                        this bonus,if he/she reaches any of the below bench marks in a certain time period.</p>
+                </div>
+                <button class="btn btn-warning" (click)="fastStartBonus()">Read more</button>
+            </div>
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="personalSponsoredCustomerPremiumKitBonusCalculation()">
+                    <p class="bonus-title">Personal Sponsored Customer premium kit Bonus</p>
+                    <!-- <p class="commission-type">( Type : Differential commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;This bonus is paid to the sponsor when a
+                        downline
+                        member buys a premium starter kit/ sign up pack or any special kits. </p>
+                </div>
+                <button class="btn btn-warning" (click)="personalSponsoredCustomerPremiumKitBonus()">Read more</button>
+            </div>
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="preferredCustomerSalesBonusCalculation()">
+                    <p class="bonus-title">Preferred Customer Sales Bonus</p>
+                    <!-- <p class="commission-type">( Type : Differential commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;This bonus can be received by a sponsor or
+                        one of his/ her preferred customer’s (a person who is enrolled to the company but not yet
+                        attained
+                        distributorstatus) purchase.</p>
+                </div>
+                <button class="btn btn-warning" (click)="preferredCustomerSalesBonus()">Read more</button>
+            </div>
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="volumeBonusCalculation()">
+                    <p class="bonus-title">Volume Bonus</p>
+                    <!-- <p class="commission-type">( Type : Differential commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;This bonus pays a fixed percentage of bonus
+                        for the sales and purchases of the downline to a sponsor. </p>
+                </div>
+                <button class="btn btn-warning" (click)="volumeBonus()">Read more</button>
+            </div>
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="customerAcquisitionBonusCalculation()">
+                    <p class="bonus-title">Customer Acquisition Bonus</p>
+                    <!-- <p class="commission-type">( Type : Differential commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;If a new representative qualifies as a
+                        distributor within a certain time, then the sponsor of this distributor is eligible to receive
+                        this bonus.</p>
+                </div>
+                <button class="btn btn-warning" (click)="customerAcquisitionBonus()">Read more</button>
+            </div>
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="customerMilestoneBonusCalculation()">
+                    <p class="bonus-title">Customer Milestone Bonus</p>
+                    <!-- <p class="commission-type">( Type : Differential commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;This bonus is paid based on the monthly
+                        personal customer sales (retail sales), if personal retail sales of a distributor reaches a
+                        mile stone (e.g. 25 or 50) then that distributor will be paid with this bonus.</p>
+                </div>
+                <button class="btn btn-warning" (click)="customerMilestoneBonus()">Read more</button>
+            </div>
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="earnedPositionBonusCalculation()">
+                    <p class="bonus-title">Earned-Position-Bonus</p>
+                    <!-- <p class="commission-type">( Type : Differential / Level commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Earned – position bonus can be received by
+                        a
+                        distributor, when himself or person that distributor personally enrols reaches different levels
+                        /
+                        ranks of the organization within certain time frame. This is much like Fast-track bonus.</p>
+                </div>
+                <button class="btn btn-warning" (click)="earnedPositionBonus()">Read more</button>
+            </div>
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="retailBonusCalculation()">
+                    <p class="bonus-title">Retail bonus</p>
+                    <!-- <p class="commission-type">( Type : Differential / Level commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;The bonus paid can be fixed percentage or
+                        it
+                        can be a percentage of difference between retail and wholesale price. </p>
+                </div>
+                <button class="btn btn-warning" (click)="retailBonus()">Read more</button>
+            </div>
+
+        </div>
+
+        <button type="submit" class="btn btn-info" style="float: right; width: 150px;" (click)="back()">Back</button>
+
+    </div>
+
+    <div *ngIf="commissionTypeArr[0] == 'Level'">
+        <p class="sub-title">Type : Level Commission</p>
+
+        <div class="row">
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="fastStartBonusCalculation()">
+                    <p class="bonus-title">Fast-Start Bonus / Quick start</p>
+                    <!-- <p class="commission-type">( Type : Level commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;As a new representative, a member is
+                        eligible
+                        for
+                        this bonus,if he/she reaches any of the below bench marks in a certain time period.</p>
+                </div>
+                <button class="btn btn-warning" (click)="fastStartBonus()">Read more</button>
+            </div>
+
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="personalSponsoredCustomerPremiumKitBonusCalculation()">
+                    <p class="bonus-title">Personal Sponsored Customer premium kit Bonus</p>
+                    <!-- <p class="commission-type">( Type : Level commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;This bonus is paid to the sponsor when a
+                        downline
+                        member buys a premium starter kit/ sign up pack or any special kits. </p>
+                </div>
+                <button class="btn btn-warning" (click)="personalSponsoredCustomerPremiumKitBonus()">Read more</button>
+            </div>
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="earnedPositionBonusCalculation()">
+                    <p class="bonus-title">Earned-Position-Bonus</p>
+                    <!-- <p class="commission-type">( Type : Differential / Level commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Earned – position bonus can be received by
+                        a
+                        distributor, when himself or person that distributor personally enrols reaches different levels
+                        /
+                        ranks of the organization within certain time frame. This is much like Fast-track bonus.</p>
+                </div>
+                <button class="btn btn-warning" (click)="earnedPositionBonus()">Read more</button>
+            </div>
+
+            <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+                <div (click)="retailBonusCalculation()">
+                    <p class="bonus-title">Retail bonus</p>
+                    <!-- <p class="commission-type">( Type : Differential / Level commission )</p> -->
+                    <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;The bonus paid can be fixed percentage or
+                        it
+                        can be a percentage of difference between retail and wholesale price. </p>
+                </div>
+                <button class="btn btn-warning" (click)="retailBonus()">Read more</button>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-info" style="float: right; width: 150px;" (click)="back()">Back</button>
+
+    </div>
+</div>
+
+<div *ngIf="length == 2">
+    <p class="sub-title">Type : Differential & Level Commission</p>
+
+    <div class="row">
+
+        <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+            <div (click)="fastStartBonusCalculation()">
+                <p class="bonus-title">Fast-Start Bonus / Quick start</p>
+                <p class="commission-type">( Type : Differential commission )</p>
+                <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;As a new representative, a member is eligible
+                    for
+                    this bonus,if he/she reaches any of the below bench marks in a certain time period.</p>
+            </div>
+            <button class="btn btn-warning" (click)="fastStartBonus()">Read more</button>
+        </div>
+
+        <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+            <div (click)="personalSponsoredCustomerPremiumKitBonusCalculation()">
+                <p class="bonus-title">Personal Sponsored Customer premium kit Bonus</p>
+                <p class="commission-type">( Type : Differential commission )</p>
+                <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;This bonus is paid to the sponsor when a
+                    downline
+                    member buys a premium starter kit/ sign up pack or any special kits. </p>
+            </div>
+            <button class="btn btn-warning" (click)="personalSponsoredCustomerPremiumKitBonus()">Read more</button>
+        </div>
+
+        <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+            <div (click)="preferredCustomerSalesBonusCalculation()">
+                <p class="bonus-title">Preferred Customer Sales Bonus</p>
+                <p class="commission-type">( Type : Differential commission )</p>
+                <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;This bonus can be received by a sponsor or
+                    one of his/ her preferred customer’s (a person who is enrolled to the company but not yet attained
+                    distributorstatus) purchase.</p>
+            </div>
+            <button class="btn btn-warning" (click)="preferredCustomerSalesBonus()">Read more</button>
+        </div>
+
+        <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+            <div (click)="volumeBonusCalculation()">
+                <p class="bonus-title">Volume Bonus</p>
+                <p class="commission-type">( Type : Differential commission )</p>
+                <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;This bonus pays a fixed percentage of bonus
+                    for the sales and purchases of the downline to a sponsor. </p>
+            </div>
+            <button class="btn btn-warning" (click)="volumeBonus()">Read more</button>
+        </div>
+
+        <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+            <div (click)="customerAcquisitionBonusCalculation()">
+                <p class="bonus-title">Customer Acquisition Bonus</p>
+                <p class="commission-type">( Type : Differential commission )</p>
+                <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;If a new representative qualifies as a
+                    distributor within a certain time, then the sponsor of this distributor is eligible to receive
+                    this bonus.</p>
+            </div>
+            <button class="btn btn-warning" (click)="customerAcquisitionBonus()">Read more</button>
+        </div>
+
+        <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+            <div (click)="customerMilestoneBonusCalculation()">
+                <p class="bonus-title">Customer Milestone Bonus</p>
+                <p class="commission-type">( Type : Differential commission )</p>
+                <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;This bonus is paid based on the monthly
+                    personal customer sales (retail sales), if personal retail sales of a distributor reaches a
+                    mile stone (e.g. 25 or 50) then that distributor will be paid with this bonus.</p>
+            </div>
+            <button class="btn btn-warning" (click)="customerMilestoneBonus()">Read more</button>
+        </div>
+
+        <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+            <div (click)="earnedPositionBonusCalculation()">
+                <p class="bonus-title">Earned-Position-Bonus</p>
+                <p class="commission-type">( Type : Differential / Level commission )</p>
+                <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Earned – position bonus can be received by a
+                    distributor, when himself or person that distributor personally enrols reaches different levels /
+                    ranks of the organization within certain time frame. This is much like Fast-track bonus.</p>
+            </div>
+            <button class="btn btn-warning" (click)="earnedPositionBonus()">Read more</button>
+        </div>
+
+        <div class="col-3" style="margin: 30px; border: 1px solid rgb(212, 202, 202);">
+            <div (click)="retailBonusCalculation()">
+                <p class="bonus-title">Retail bonus</p>
+                <p class="commission-type">( Type : Differential / Level commission )</p>
+                <p class="bonus-content"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;The bonus paid can be fixed percentage or it
+                    can be a percentage of difference between retail and wholesale price. </p>
+            </div>
+            <button class="btn btn-warning" (click)="retailBonus()">Read more</button>
+        </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-info" style="float: right; width: 150px;" (click)="back()">Back</button>
+
+</div>

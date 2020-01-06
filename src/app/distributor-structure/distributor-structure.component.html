@@ -1,0 +1,31 @@
+<!-- <p>distributor-structure works!</p> -->
+
+<form [formGroup]="distributorForm" (ngSubmit)="getDistributorDetails()">
+    <div class="row">
+        <div class="col-9">
+            <label>Max no. of first level distributor : </label>
+        </div>
+        <div class="col-3">
+            <input type="number" formControlName="maxFirstLevelDistributors">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <label>Min no. of first level distributor : </label>
+        </div>
+        <div class="col-3">
+            <input type="number" formControlName="minFirstLevelDistributors">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <label>Max no. of levels under each distributor : </label>
+        </div>
+        <div class="col-3">
+            <input type="number" formControlName="maxLevels">
+        </div>
+    </div>
+    <div >
+    <button type="submit" class="btn btn-info">Submit</button>
+</div>
+</form>

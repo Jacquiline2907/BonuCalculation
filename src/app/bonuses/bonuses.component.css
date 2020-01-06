@@ -1,0 +1,40 @@
+p{
+    font-size: 15pt;
+}
+
+.title{
+    font-size: 5em;
+    text-align: center;
+    font-weight: bold;
+    text-shadow:2px 5px brown;
+}
+
+.sub-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.bonus-division{
+    margin: 10px; border: 1px solid rgb(212, 202, 202);
+}
+
+.bonus-title{
+    color: brown; font-size: 1.5em;text-align: center; font-weight: bold;
+}
+
+.commission-type{
+    text-align: center; color: brown;
+}
+
+.bonus-content{
+    text-align: justify;
+}
+
+button{
+    float: right;
+    margin: 5px;
+}
+
+.row{
+    margin: 30px;
+}

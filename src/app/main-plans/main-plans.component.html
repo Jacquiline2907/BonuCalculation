@@ -1,0 +1,26 @@
+<!-- <p>main-plans works!</p> -->
+
+<!-- <form [formGroup]="mainPlanForm">
+  <label>Select Main Plans<br></label>
+      <mat-radio-group class="title"><br>
+        <mat-radio-button value="1" formControlName="mainPlanKey">MLM plans</mat-radio-button><br>
+        <mat-radio-button value="2" formControlName="mainPlanKey">Party plans</mat-radio-button>
+      </mat-radio-group>
+    <br>
+    <button type="submit" class="btn btn-info">next</button>
+</form> -->
+
+<form [formGroup]="mainPlanForm" (ngSubmit)="mainPlan()">
+  <div class="row">
+    <label style="font-size: 2em;">Select Main Plans</label>
+  </div>
+  <div class="row">
+      <mat-radio-group class="title" formControlName="mainPlanKey"><br>
+        <mat-radio-button value=1 >MLM plans</mat-radio-button><br>
+        <mat-radio-button value=2 >Party plans</mat-radio-button>
+      </mat-radio-group>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-info">next</button>
+  </div>
+</form>

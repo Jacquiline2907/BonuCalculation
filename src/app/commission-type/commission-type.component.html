@@ -1,0 +1,16 @@
+<!-- <p>commission-type works!</p> -->
+
+<form [formGroup]="commissionTypeForm" (ngSubmit)="submit()">
+        <p style="font-size: 2em;">Select Commission Type</p>
+
+    <label formArrayName="commission">
+        <div *ngFor="let commission of commissionTypeForm.controls.commission.controls; let i = index">
+            <mat-checkbox checked="true" [formControlName]="i" > {{commissionTypeData[i].name}}</mat-checkbox>
+        </div>
+
+    </label>
+<br>
+    <button type="submit" class="btn btn-info">Next</button>
+    <br>
+    <button type="submit" class="btn btn-info" (click)="distributorStructure()">Set Distributor Structure</button>
+</form> 

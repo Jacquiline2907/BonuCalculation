@@ -1,0 +1,52 @@
+
+<img class="img" width="500px" height="" src="assets/img/ns-logo.png">
+
+
+
+    <div *ngIf="userName" class="user-div">
+
+        <form class="login-form" [formGroup]="userNameForm" (ngSubmit)="next()" >
+
+            <mat-form-field class="login-full-width">
+
+                <input matInput  placeholder="User Name" formControlName="username"
+                [errorStateMatcher]="matcher" (ngModelChange)="onChange()"><mat-icon matSuffix> person</mat-icon>
+                <!-- <mat-error *ngIf="true"> -->
+                <mat-error *ngIf="userNameForm.controls['username'].hasError('pattern')">
+                  The username format is invalid!
+                </mat-error>
+                <mat-error *ngIf="userNameForm.controls['username'].hasError('required')">
+                    Username is <strong>required!</strong>
+                </mat-error>
+            </mat-form-field>
+            <div class="alert alert-danger" *ngIf="inValidUserError">
+                <strong>Please Enter a Valid username!</strong>
+              </div>
+
+            <div class="bottom">
+                <button type="submit" class="btn btn-info" >Next    <span class="fa fa-angle-right" ></span></button>
+              </div>
+
+        </form>
+    </div>
+    <div *ngIf="password" class="user-div">
+        <form class="login-form" [formGroup]="passwordForm" (ngSubmit)="submit()">
+            <mat-form-field class="login-full-width">
+                <input matInput  placeholder="Password" type="password" formControlName="passwordF"
+                [errorStateMatcher]="matcher" (ngModelChange)="onChange()"><mat-icon matSuffix> vpn_key</mat-icon>
+                <mat-error *ngIf="passwordForm.controls['passwordF'].hasError('pattern')">
+                    Please enter a valid password
+                </mat-error>
+                <mat-error *ngIf="passwordForm.controls['passwordF'].hasError('required')">
+                    Password is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            <button type="submit" class="btn btn-info" >Submit</button>
+        </form>
+    </div>
+
+
+
+<!-- Copyright 2019 Google LLC. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->

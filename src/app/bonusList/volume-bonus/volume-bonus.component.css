@@ -1,0 +1,26 @@
+h1{
+    color: brown;
+}
+
+p{
+    font-size: 1.5em;
+    text-align: justify;
+    
+}
+
+li{
+    margin-left: 90px ;
+    font-size: 1.5em;
+}
+
+div{
+    margin: 5px;
+}
+
+.buttons{
+    float: right;
+}
+
+button{
+    margin: 10px;
+}

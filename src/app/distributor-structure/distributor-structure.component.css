@@ -1,0 +1,23 @@
+form {
+    display: grid;
+    margin: 200px;
+    /* background-color: #ff1124; */
+    justify-content: center;
+    align-items: center;
+  }
+
+.row{
+    margin: 5px;
+}
+  
+  span{
+    margin-bottom: 30px;
+  } 
+
+  button{
+      
+    margin-left: 250px;
+    margin-top:20px ;
+    width: 100px;
+    
+  }

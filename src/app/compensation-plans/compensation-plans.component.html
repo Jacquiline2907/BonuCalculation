@@ -1,0 +1,37 @@
+<!-- <p>compensation-plans works!</p> -->
+<!-- 
+<form [formGroup]="compenstionPlanForm" (ngSubmit)="compensationPlan()">
+    <div *ngFor="let plan of compensationPlans">
+        <div>
+            <mat-checkbox *ngIf="plan.plans == 'Stairstep'" checked="true" value='Stairstep'>{{plan.plans}}
+            </mat-checkbox>
+        </div>
+        <div>
+            <mat-checkbox *ngIf="plan.plans != 'Stairstep'" disabled>{{plan.plans}}</mat-checkbox>
+        </div>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-info">next</button>
+    </div>
+</form> -->
+<form [formGroup]="compenstionPlanForm" (ngSubmit)="submit()">
+    <p style="font-size: 2em;">Select Compensation Plans</p>
+
+    <label formArrayName="compensation">
+        <div *ngFor="let compensation of compensationPlans; let i = index">
+            <div *ngIf="compensation.plans == 'Stairstep'">
+                <!-- <input type="checkbox" [formControlName]="i" checked> {{compensationPlans[i].plans}} -->
+                <mat-checkbox checked="true" [formControlName]="i">{{compensationPlans[i].plans}}
+                </mat-checkbox>
+                <br>
+            </div>
+            <div *ngIf="compensation.plans != 'Stairstep'">
+                <!-- <input type="checkbox" [formControlName]="i" disabled> {{compensationPlans[i].plans}} -->
+                <mat-checkbox disabled="true" [formControlName]="i">{{compensationPlans[i].plans}}</mat-checkbox>
+                <br>
+            </div>
+        </div>
+    </label>
+    <br>
+    <button  type="submit" class="btn btn-info">Next</button>
+</form>
