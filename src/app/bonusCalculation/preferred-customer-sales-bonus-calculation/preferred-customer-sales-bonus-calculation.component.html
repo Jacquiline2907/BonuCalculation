@@ -1,1 +1,14 @@
-<p>preferred-customer-sales-bonus-calculation works!</p>
+
+<form [formGroup]="formdata"  style="text-align: center"(ngSubmit)="callingFunction()">
+
+  <div style="background-color: bisque;">
+
+    Level-1: <input type="text" formControlName="lev1"><br /><br />
+    Level-2: <input type="text" formControlName="lev2"><br /><br />
+    Level-3: <input type="text" formControlName="lev3"><br /><br />
+    Level-4: <input type="text" formControlName="lev4"><br /><br />
+    Level-5: <input type="text" formControlName="lev5"><br /><br />
+
+  </div>
+  <input type="submit" name="button">
+</form>

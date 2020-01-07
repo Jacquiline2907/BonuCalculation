@@ -28,7 +28,7 @@ export class PersonalSponsoredCustomerPremiumKitBonusCalculationComponent implem
     this.percentageModel = this.percentageLevels.value;
     console.log(this.percentageModel);
 
-    this.setPercent.setPercentage(this.percentageModel).subscribe(response => {
+    this.setPercent.premiumKitSetPercentage(this.percentageModel).subscribe(response => {
       console.log(response);
     });
 
