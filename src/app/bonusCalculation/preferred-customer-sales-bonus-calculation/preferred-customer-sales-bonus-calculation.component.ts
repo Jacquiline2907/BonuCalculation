@@ -2,12 +2,12 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { samplepojo } from "src/app/modal/samplepojo";
-import { PercentageConnService } from "src/app/service/percentage-conn.service";
+import { PercentageConnService } from 'src/app/service/percentage-conn.service';
 
 @Component({
-  selector: "app-preferred-customer-sales-bonus-calculation",
-  templateUrl: "./preferred-customer-sales-bonus-calculation.component.html",
-  styleUrls: ["./preferred-customer-sales-bonus-calculation.component.css"]
+  selector: 'app-preferred-customer-sales-bonus-calculation',
+  templateUrl: './preferred-customer-sales-bonus-calculation.component.html',
+  styleUrls: ['./preferred-customer-sales-bonus-calculation.component.css']
 })
 export class PreferredCustomerSalesBonusCalculationComponent implements OnInit {
   constructor(private service: PercentageConnService, private router: Router) {}
