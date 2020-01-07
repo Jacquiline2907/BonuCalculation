@@ -1,1 +1,47 @@
 <!-- <p>customer-acquisition-bonus-calculation works!</p> -->
+
+<form [formGroup]="levelForm" (ngSubmit)="bonusCalculation()">
+    <div class="row">
+        <div class="col-4">
+            <label>Level 1</label>
+        </div>
+        <div class="col-3">
+            <input type="number" formControlName="level1" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <label>Level 2</label>
+        </div>
+        <div class="col-3">
+            <input type="number" formControlName="level2" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <label>Level 3</label>
+        </div>
+        <div class="col-3">
+            <input type="number" formControlName="level3" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <label>Level 4</label>
+        </div>
+        <div class="col-3">
+            <input type="number" formControlName="level4" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <label>Level 5</label>
+        </div>
+        <div class="col-3">
+            <input type="number" formControlName="level5" >
+        </div>
+    </div>
+
+   <button type="submit" class="btn btn-info">Calculate Bonus</button>
+
+</form>
