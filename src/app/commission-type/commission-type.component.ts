@@ -42,10 +42,7 @@ export class CommissionTypeComponent implements OnInit {
     console.log(selectedOrders);
     this.router.navigate(['bonus']);
   }
-  distributorStructure()
-  {
-    this.router.navigate(['distributor']);
-  }
+ 
 
 
 

@@ -9,6 +9,7 @@ import { PersonalSponsoredCustomerPremiumKitBonusCalculationComponent } from './
 import { PreferredCustomerSalesBonusCalculationComponent } from './preferred-customer-sales-bonus-calculation/preferred-customer-sales-bonus-calculation.component';
 import { RetailBonusCalculationComponent } from './retail-bonus-calculation/retail-bonus-calculation.component';
 import { VolumeBonusCalculationComponent } from './volume-bonus-calculation/volume-bonus-calculation.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -24,6 +25,8 @@ import { VolumeBonusCalculationComponent } from './volume-bonus-calculation/volu
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     BonusCalculationRoutingModule
   ]
 })

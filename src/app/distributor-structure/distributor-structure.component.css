@@ -21,3 +21,17 @@ form {
     width: 100px;
     
   }
+
+  p{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  label{
+    font-weight: 600;
+  }
+
+  input{
+    border: 1px solid black;
+  }

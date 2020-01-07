@@ -110,5 +110,9 @@ export class BonusesComponent implements OnInit {
     this.router.navigate(['/retailBonusCalculation']);
   }
   
-      
+  distributorStructure()
+  {
+    this.router.navigate(['distributor']);
+  }
+
 }

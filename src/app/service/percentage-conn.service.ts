@@ -11,6 +11,6 @@ export class PercentageConnService {
   constructor(private http: HttpClient) { }
 
   setPercentage(percentages: percentageSet) {
-    return this.http.post('http://localhost:8080/percentage', percentages);
+    return this.http.post('http://localhost:8080/nextSphere/percentage', percentages);
   }
 }

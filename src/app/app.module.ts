@@ -21,7 +21,6 @@ import { BonusModule } from './bonusList/bonus.module';
 import { BonusesComponent } from './bonuses/bonuses.component';
 import { DistributorStructureComponent } from './distributor-structure/distributor-structure.component';
 import { BonusCalculationModule } from './bonusCalculation/bonus-calculation.module';
-import { PremiumBonusSetComponent } from './premium-bonus-set/premium-bonus-set.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +33,7 @@ import { PremiumBonusSetComponent } from './premium-bonus-set/premium-bonus-set.
     CompensationPlansComponent,
     CommissionTypeComponent,
     BonusesComponent,
-    DistributorStructureComponent,
-    PremiumBonusSetComponent
+    DistributorStructureComponent
   ],
   imports: [
     BrowserModule,

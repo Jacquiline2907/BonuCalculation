@@ -31,8 +31,13 @@ p{
 }
 
 button{
-    float: right;
+    /* float: right; */
     margin: 5px;
+    width: 150px;
+}
+
+.align-button{
+    float: right;
 }
 
 .row{

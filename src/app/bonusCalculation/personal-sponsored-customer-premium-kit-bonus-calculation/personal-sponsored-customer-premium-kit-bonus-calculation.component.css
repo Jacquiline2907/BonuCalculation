@@ -1,0 +1,15 @@
+form {
+    display: grid;
+    margin: 200px;
+    /* background-color: #ff1124; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  input{
+      margin-left: 20px;
+  }
+
+  p{
+      font-weight: 500;
+  }
