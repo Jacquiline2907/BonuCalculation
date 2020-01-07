@@ -12,7 +12,7 @@ import { PercentageConnService } from 'src/app/service/percentage-conn.service';
 export class PreferredCustomerSalesBonusCalculationComponent implements OnInit {
   constructor(private service: PercentageConnService, private router: Router) {}
 
-  title = "sampleUIbonus";
+  title = 'sampleUIbonus';
   formdata: FormGroup;
   samplepojo: samplepojo[];
   ngOnInit() {
